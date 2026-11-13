@@ -1,0 +1,73 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+    </head>
+
+    <header class="site-header">
+    <a class="logo" href="index.html">
+        TECH<span>STORE</span>
+    </a>
+
+    <nav class="main-nav">
+        <a class="active" href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#info">О магазине</a>
+    </nav>
+
+    <div class="header-actions">
+        <div id="guest-actions">
+            <a class="login-link" id="open-login" href="login.html">Войти</a>
+            <a class="register-link" id="open-register" href="register.html">Регистрация</a>
+        </div>
+
+        <a class="cart-link" href="profile.html">
+            Корзина <span id="header-cart-count">0</span>
+        </a>
+    </div>
+    </header>
+
+
+        <body>
+            <p class="register-heading">Регистрация</p>
+            
+            <div class="register-container">
+    
+                <form class="form-register" action="/register" method="post">
+
+                    <div>
+                        <label for="login">Логин:</label>
+                        <input  class="register-input" type="text" id="login" placeholder="Логин" name="username" required>
+                    </div>
+                    <div>
+                        <label for="email">Почта:</label>
+                        <input  class="register-input" type="email" id="email" placeholder="Ваш email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Пароль:</label>
+                        <input  class="register-input" type="password" id="password" placeholder="Пароль" name="key" required>
+                    </div>
+                    <div>
+                        <label for="password">Подтвердите пароль:</label>
+                        <input  class="register-input" type="password" id="password_confirm" placeholder="Подтвердите Пароль" name="key_confirm" required>
+                    </div>
+
+                    <div>
+                        <label class="agreement" for="agreement">Я согласен с <a href="terms.html">условиями пользования </a></label>
+                        <input  type="checkbox" id="agreement" name="agreement" value="yes" required>
+                    </div>
+
+                    <div>
+                        <button class="button">Зарегистрироваться
+                    </div>
+
+
+                </form>
+            </div>
+            <div>
+
+                <a href="index.html">Зарегистрироваться</a>
+
+            </div>
+        </body>
+</html>

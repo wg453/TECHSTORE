@@ -1,0 +1,115 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body class="body-register">
+
+    <main class="register-container">
+
+        <div class="register-content">
+
+            <p class="register-heading">Регистрация</p>
+
+            <form class="form-register" id="register-form">
+
+                <p id="register-message" role="status"></p>
+
+                <div>
+                    <label for="login">Логин:</label>
+                    <input class="register-input" type="text"
+                           id="login" placeholder="Логин"
+                           name="username" required>
+                </div>
+
+                <div>
+                    <label for="email">Почта:</label>
+                    <input class="register-input" type="email"
+                           id="email" placeholder="Ваш email"
+                           name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input class="register-input" type="password"
+                           id="password" placeholder="Пароль"
+                           name="key" required>
+                </div>
+
+                <div>
+                    <label for="password_confirm">Подтвердите пароль:</label>
+                    <input class="register-input" type="password"
+                           id="password_confirm"
+                           placeholder="Подтвердите пароль"
+                           name="key_confirm" required>
+                </div>
+
+                <div class="agreement-row">
+                    <label class="agreement" for="agreement">
+                        Я согласен с
+                        <a href="terms.html">условиями пользования</a>
+                    </label>
+                    <input type="checkbox" id="agreement"
+                           name="agreement" value="yes" required>
+                </div>
+
+                <div>
+                    <button class="button" type="submit">
+                        Зарегистрироваться
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+        <div>
+
+            <a href="index.html">Зарегистрироваться</a>
+
+        </div>
+
+<script>
+
+const registerForm = document.querySelector("#register-form");
+const registerMessage = document.querySelector("#register-message");
+
+registerForm.onsubmit = async function(event) {
+    event.preventDefault();
+
+    registerMessage.textContent = "Регистрируем пользователя...";
+
+    try {
+        const response = await fetch("/register", {
+            method: "POST",
+            body: new URLSearchParams(
+                new FormData(registerForm)
+            )
+        });
+
+        const message = await response.text();
+
+        if (response.ok) {
+            registerMessage.textContent = message;
+
+            window.location.href = "/index.html";
+        } else {
+            registerMessage.textContent = message;
+        }
+
+    } catch (error) {
+        registerMessage.textContent =
+            "Не удалось связаться с сервером.";
+
+        console.error("Ошибка регистрации:", error);
+    }
+    await checkSession();
+};
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой интернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
+    <script src="panels.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+    <a class="logo" href="index.html">
+        TECH<span>STORE</span>
+    </a>
+
+    <nav class="main-nav">
+        <a class="active" href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#info">О магазине</a>
+    </nav>
+
+    <div class="header-actions">
+        <div id="guest-actions">
+            <a class="login-link" id="open-login" href="login.html">Войти</a>
+            <a class="register-link" id="open-register" href="register.html">Регистрация</a>
+        </div>
+
+        <a class="profile-link" id="profile-link"
+           href="profile.html" hidden>
+            Профиль
+        </a>
+
+        <a class="cart-link" href="profile.html">
+            Корзина <span id="header-cart-count">0</span>
+        </a>
+
+        <button id="logout-button" type="button">
+            Выход
+        </button>
+
+    </div>
+    </header>
+
+
+    <main class="home-page">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">ТЕХНОЛОГИИ ДЛЯ ТВОЕЙ ЖИЗНИ</p>
+
+                <h1>
+                    Техника, которая
+                    <span>двигает вперёд</span>
+                </h1>
+
+                <p class="hero-description">
+                    Смартфоны, ноутбуки и мониторы для работы,
+                    учёбы и развлечений. Выбирай свою технику
+                    в одном месте.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="home-button" href="catalog.html">
+                        Перейти в каталог →
+                    </a>
+                    <a class="secondary-button" href="#info">
+                        О нашем магазине
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>15+</strong>
+                        <span>товаров в каталоге</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>доступ к каталогу</span>
+                    </div>
+                    <div>
+                        <strong>₸</strong>
+                        <span>цены в тенге</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+                <div class="visual-card visual-card-back">
+                    <span>TECHNOLOGY</span>
+                    <div class="visual-line"></div>
+                    <div class="visual-line short"></div>
+                </div>
+                <div class="visual-card visual-card-front">
+                    <span class="visual-label">НОВОЕ ПОКОЛЕНИЕ</span>
+                    <div class="visual-device">
+                        <div class="device-screen">
+                            <div class="device-orb"></div>
+                        </div>
+                    </div>
+                    <span class="visual-caption">Будущее уже здесь</span>
+                </div>
+                <div class="floating-tag">TECH STORE</div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ВЫБИРАЙ СВОЁ</p>
+                    <h2>Категории товаров</h2>
+                </div>
+                <a href="catalog.html" class="text-link">
+                    Все товары →
+                </a>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="catalog.html">
+                    <span class="category-number">01</span>
+                    <div class="category-icon">▯</div>
+                    <h3>Смартфоны</h3>
+                    <p>Мощность и технологии в твоих руках</p>
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a class="category-card" href="catalog.html">
+                    <span class="category-number">02</span>
+                    <div class="category-icon">▱</div>
+                    <h3>Ноутбуки</h3>
+                    <p>Для работы, учёбы и творчества</p>
+                    <span class="category-arrow">↗</span>
+                </a>
+
+                <a class="category-card" href="catalog.html">
+                    <span class="category-number">03</span>
+                    <div class="category-icon">▣</div>
+                    <h3>Мониторы</h3>
+                    <p>Больше пространства для твоих идей</p>
+                    <span class="category-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">НАЧНИ С ЭТОГО</p>
+                    <h2>Популярные товары</h2>
+                </div>
+                <a href="catalog.html" class="text-link">
+                    Открыть каталог →
+                </a>
+            </div>
+
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="featured-image phone-art">
+                        <span class="product-badge">Смартфон</span>
+                        <div class="phone-shape">
+                            <div class="phone-screen"></div>
+                        </div>
+                    </div>
+                    <div class="featured-details">
+                        <p class="featured-category">SAMSUNG</p>
+                        <h3>Galaxy S25 5G</h3>
+                        <p class="featured-description">
+                            Компактный смартфон с мощным процессором
+                        </p>
+                        <div class="featured-bottom">
+                            <strong>450 000 ₸</strong>
+                            <a href="catalog.html" aria-label="Открыть каталог">→</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-image laptop-art">
+                        <span class="product-badge">Ноутбук</span>
+                        <div class="laptop-shape">
+                            <div class="laptop-screen"></div>
+                            <div class="laptop-base"></div>
+                        </div>
+                    </div>
+                    <div class="featured-details">
+                        <p class="featured-category">LENOVO</p>
+                        <h3>IdeaPad Slim 5</h3>
+                        <p class="featured-description">
+                            Ноутбук для повседневных задач
+                        </p>
+                        <div class="featured-bottom">
+                            <strong>450 000 ₸</strong>
+                            <a href="catalog.html" aria-label="Открыть каталог">→</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-image monitor-art">
+                        <span class="product-badge">Монитор</span>
+                        <div class="monitor-shape">
+                            <div class="monitor-screen"></div>
+                            <div class="monitor-stand"></div>
+                            <div class="monitor-foot"></div>
+                        </div>
+                    </div>
+                    <div class="featured-details">
+                        <p class="featured-category">ACER</p>
+                        <h3>Nitro 49"</h3>
+                        <p class="featured-description">
+                            Широкий экран для игр и работы
+                        </p>
+                        <div class="featured-bottom">
+                            <strong>350 000 ₸</strong>
+                            <a href="catalog.html" aria-label="Открыть каталог">→</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="advantages" id="info">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">НАШ ПОДХОД</p>
+                    <h2>Почему TECHSTORE?</h2>
+                </div>
+            </div>
+
+            <div class="advantages-grid">
+                <article class="advantage-card">
+                    <div class="advantage-icon">◇</div>
+                    <h3>Выбор техники</h3>
+                    <p>
+                        Собираем в каталоге технику для разных задач
+                        и потребностей.
+                    </p>
+                </article>
+
+                <article class="advantage-card">
+                    <div class="advantage-icon">⌕</div>
+                    <h3>Понятные характеристики</h3>
+                    <p>
+                        Можно изучить основные параметры товаров
+                        перед покупкой.
+                    </p>
+                </article>
+
+                <article class="advantage-card">
+                    <div class="advantage-icon">➜</div>
+                    <h3>Удобный заказ</h3>
+                    <p>
+                        Планируем оформление заказа через сайт
+                        с указанием данных доставки.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="index.html">TECH<span>STORE</span></a>
+        <p>Техника для работы, учёбы и развлечений.</p>
+        <a href="catalog.html">Перейти в каталог →</a>
+        <small>© TECHSTORE</small>
+    </footer>
+
+
+<!-- ========================================
+     TECHSTORE — Панели регистрации и входа
+     ======================================== -->
+
+
+<div class="panel-overlay" id="login-overlay">
+    <section class="login-panel" id="login-panel"
+             role="dialog" aria-modal="true"
+             aria-labelledby="login-title">
+
+        <button class="close-login" id="close-login"
+                type="button" aria-label="Закрыть">
+            ×
+        </button>
+
+        <h2 id="login-title">Вход в аккаунт</h2>
+        <p>Войди, чтобы продолжить покупки.</p>
+
+    <form id="login-form" action="/login" method="post">
+        <label>
+            Email
+            <input type="email" name="email" placeholder="example@mail.com" autocomplete="email">
+        </label>
+
+        <label>
+            Пароль
+            <input type="password" name="key" placeholder="Введите пароль" autocomplete="current-password">
+        </label>
+
+        <button type="submit">Войти</button>
+
+        <p id="login-message" role="status"></p>
+    </form>
+
+            <p>
+                Нет аккаунта?
+                <a href="#" id="open-register-from-login">Регистрация</a>
+            </p>
+
+    </section>
+</div>
+
+<div class="panel-overlay" id="register-overlay">
+
+    <section class="register-panel" id="register-panel"
+             role="dialog" aria-modal="true"
+             aria-labelledby="register-title">
+
+        <button class="close-register" id="close-register"
+                type="button" aria-label="Закрыть">
+            ×
+        </button>
+
+        <h2 id="register-title">Регистрация</h2>
+        <p>Создай аккаунт TECHSTORE.</p>
+
+        <form id="register-form">
+
+            <label for="reg-login">Логин:</label>
+            <input type="text" id="reg-login"
+                   name="username" placeholder="Логин" maxlength="64">
+
+            <label for="reg-email">Почта:</label>
+            <input type="email" id="reg-email"
+                   name="email" placeholder="Ваш email">
+
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password"
+                   name="key" placeholder="Введите Пароль" maxlength="128">
+
+            <label for="reg-password-confirm">Подтвердите пароль:</label>
+            <input type="password" id="reg-password-confirm"
+                   name="key_confirm"
+                   placeholder="Подтвердите пароль" maxlength="128">
+
+            <div class="register-agreement">
+                <label for="reg-agreement">
+                    Я согласен с <a href="terms.html">условиями пользования</a>
+                </label>
+                <input type="checkbox" id="reg-agreement"
+                       name="agreement" value="yes">
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+
+            <p id="register-message" role="status"></p>
+
+        </form>
+
+        <p>
+            Уже есть аккаунт?
+            <a href="#" id="open-login-from-register">Войти</a>
+        </p>
+
+    </section>
+
+</div>
+
+
+</body>
+</html>

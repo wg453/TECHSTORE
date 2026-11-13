@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — TECHSTORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+    <script src="cart.js" defer></script>
+    <script src="panels.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">TECH<span>STORE</span></a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a class="active" href="catalog.html" aria-current="page">Каталог</a>
+            <a href="index.html#info">О магазине</a>
+        </nav>
+
+    <div class="header-actions">
+        <div id="guest-actions">
+            <a class="login-link" id="open-login" href="login.html">Войти</a>
+            <a class="register-link" id="open-register" href="register.html">Регистрация</a>
+        </div>
+
+        <a class="profile-link" id="profile-link"
+           href="profile.html" hidden>
+            Профиль
+        </a>
+
+        <a class="cart-link" href="profile.html">
+            Корзина <span id="header-cart-count">0</span>
+        </a>
+
+        <button id="logout-button" type="button">
+            Выход
+        </button>
+
+    </div>
+    </header>
+
+    <main class="catalog-page">
+        <section class="catalog-intro">
+            <p class="eyebrow">ТЕХНОЛОГИИ ДЛЯ ТВОЕЙ ЖИЗНИ</p>
+            <h1>Каталог <span>техники</span></h1>
+            <p class="catalog-intro-description">Выбирай устройства для работы, учёбы, творчества и развлечений.</p>
+        </section>
+
+        <section class="catalog-section" aria-labelledby="products-title">
+            <div class="catalog-heading">
+                <div>
+                    <p class="eyebrow">ВЫБИРАЙ СВОЁ</p>
+                    <h2 id="products-title">Все товары</h2>
+                </div>
+                <span class="catalog-count">15 товаров</span>
+            </div>
+
+            <div class="catalog-grid">
+
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/monitor.webp"
+                            alt="Acer Nitro EI491CRPbmiiipx"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="acer-nitro-ei491crpbmiiipx"
+                        >
+                        <span class="product-category">Монитор</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">ACER</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Acer Nitro EI491CRPbmiiipx
+                        </h3>
+                        <p class="product-description">Изогнутый игровой монитор с диагональю 49 дюймов и сверхшироким форматом 32:9. Подходит для игр и работы с несколькими окнами.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Диагональ</th><td>49″</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>3840 × 1080</td></tr>
+                                    <tr><th scope="row">Матрица</th><td>VA</td></tr>
+                                    <tr><th scope="row">Формат</th><td>32:9 Super Ultrawide</td></tr>
+                                    <tr><th scope="row">Частота</th><td>144 Гц</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">649 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="acer-nitro-ei491crpbmiiipx" data-product-name="Acer Nitro EI491CRPbmiiipx" data-product-price="649990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/monitor1.webp"
+                            alt="Philips 32E1N3500"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="philips-32e1n3500"
+                        >
+                        <span class="product-category">Монитор</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">PHILIPS</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Philips 32E1N3500
+                        </h3>
+                        <p class="product-description">32-дюймовый монитор с IPS-матрицей и разрешением QHD. Подходит для документов, учёбы, просмотра видео и повседневной работы.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Диагональ</th><td>32″</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2560 × 1440</td></tr>
+                                    <tr><th scope="row">Матрица</th><td>IPS</td></tr>
+                                    <tr><th scope="row">Частота</th><td>100 Гц</td></tr>
+                                    <tr><th scope="row">Время отклика</th><td>1 мс</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">159 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="philips-32e1n3500" data-product-name="Philips 32E1N3500" data-product-price="159990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/monitor2.webp"
+                            alt="Dell P2425D"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="dell-p2425d"
+                        >
+                        <span class="product-category">Монитор</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">DELL</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Dell P2425D
+                        </h3>
+                        <p class="product-description">Компактный 23,8-дюймовый монитор с IPS-матрицей и разрешением QHD для офиса, учёбы, программирования и длительной работы.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Диагональ</th><td>23,8″</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2560 × 1440 (QHD)</td></tr>
+                                    <tr><th scope="row">Матрица</th><td>IPS</td></tr>
+                                    <tr><th scope="row">Частота</th><td>100 Гц</td></tr>
+                                    <tr><th scope="row">Время отклика</th><td>5 мс</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">144 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="dell-p2425d" data-product-name="Dell P2425D" data-product-price="144990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    
+            </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/monitor3.webp"
+                            alt="Dell Pro 32 Plus P3225DE"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="dell-pro-32-plus-p3225de"
+                        >
+                        <span class="product-category">Монитор</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">DELL</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Dell Pro 32 Plus P3225DE
+                        </h3>
+                        <p class="product-description">Большой 31,5-дюймовый монитор с разрешением QHD и частотой обновления до 100 Гц. Подходит для профессиональной работы, многозадачности и подключения периферийных устройств.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Диагональ</th><td>31,5″</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2560 × 1440 (QHD)</td></tr>
+                                    <tr><th scope="row">Матрица</th><td>IPS</td></tr>
+                                    <tr><th scope="row">Частота</th><td>до 100 Гц</td></tr>
+                                    <tr><th scope="row">Время отклика</th><td>5 мс</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">289 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="dell-pro-32-plus-p3225de" data-product-name="Dell Pro 32 Plus P3225DE" data-product-price="289990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/monitor4.webp"
+                            alt="Dell Pro P 27 P2726H"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="dell-pro-p-27-p2726h"
+                        >
+                        <span class="product-category">Монитор</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">DELL</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Dell Pro P 27 P2726H
+                        </h3>
+                        <p class="product-description">27-дюймовый монитор с IPS-матрицей и частотой обновления до 120 Гц. Хороший вариант для офисных задач, учёбы и повседневного использования.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Диагональ</th><td>27″</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>1920 × 1080 (Full HD)</td></tr>
+                                    <tr><th scope="row">Матрица</th><td>IPS</td></tr>
+                                    <tr><th scope="row">Частота</th><td>120 Гц</td></tr>
+                                    <tr><th scope="row">Время отклика</th><td>5 мс GtG в режиме Fast</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">149 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="dell-pro-p-27-p2726h" data-product-name="Dell Pro P 27 P2726H" data-product-price="149990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/phone.webp"
+                            alt="Google Pixel 9 Pro"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="google-pixel-9-pro"
+                        >
+                        <span class="product-category">Смартфон</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">GOOGLE</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Google Pixel 9 Pro
+                        </h3>
+                        <p class="product-description">Флагманский смартфон с процессором Google Tensor G4, 16 ГБ оперативной памяти и продвинутой системой камер. Подходит для фотографии, повседневных задач и использования функций искусственного интеллекта.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>Google Tensor G4</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>16 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>128 ГБ / 256 ГБ / 512 ГБ / 1 ТБ</td></tr>
+                                    <tr><th scope="row">Экран</th><td>6,3″ LTPO OLED</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>1280 × 2856</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">449 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="google-pixel-9-pro" data-product-name="Google Pixel 9 Pro" data-product-price="449990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/phone1.webp"
+                            alt="Google Pixel 8 Pro"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="google-pixel-8-pro"
+                        >
+                        <span class="product-category">Смартфон</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">GOOGLE</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Google Pixel 8 Pro
+                        </h3>
+                        <p class="product-description">Мощный смартфон с большим OLED-экраном, процессором Tensor G3 и системой камер с оптическим зумом. Подходит для мобильной фотографии, просмотра видео и многозадачной работы.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>Google Tensor G3</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>12 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>128 ГБ / 256 ГБ / 512 ГБ / 1 ТБ</td></tr>
+                                    <tr><th scope="row">Экран</th><td>6,7″ LTPO OLED</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2992 × 1344</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">319 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="google-pixel-8-pro" data-product-name="Google Pixel 8 Pro" data-product-price="319990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="images/phone2.webp"
+                            alt="Xiaomi Poco X7 Pro"
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="xiaomi-poco-x7-pro"
+                        >
+                        <span class="product-category">Смартфон</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">XIAOMI</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Xiaomi Poco X7 Pro
+                        </h3>
+                        <p class="product-description">Производительный смартфон с процессором Dimensity 8400-Ultra и AMOLED-экраном с частотой обновления до 120 Гц. Подходит для мобильных игр, мультимедиа и повседневных задач.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>MediaTek Dimensity 8400-Ultra</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>8 / 12 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>256 / 512 ГБ</td></tr>
+                                    <tr><th scope="row">Экран</th><td>6,67″ AMOLED, 120 Гц</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2712 × 1220</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">219 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="xiaomi-poco-x7-pro" data-product-name="Xiaomi Poco X7 Pro" data-product-price="219990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                            <img
+                                src="images/phone3.webp"
+                                alt="Samsung Galaxy S25 5G"
+                                loading="lazy"
+                                class="product-open"
+                                data-product-id="samsung-galaxy-s25-5g"
+                            >
+                        <span class="product-category">Смартфон</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">SAMSUNG</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="samsung-galaxy-s25-5g"
+                        >
+                            Samsung Galaxy S25 5G
+                        </h3>
+                        <p class="product-description">Флагманский смартфон с процессором Snapdragon 8 Elite for Galaxy, 12 ГБ оперативной памяти и дисплеем Dynamic AMOLED 2X с частотой до 120 Гц.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>Snapdragon 8 Elite for Galaxy</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>12 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>128 / 256 / 512 ГБ</td></tr>
+                                    <tr><th scope="row">Экран</th><td>6,2″ AMOLED, 120 Гц</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>FHD+</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">449 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="samsung-galaxy-s25-5g" data-product-name="Samsung Galaxy S25 5G" data-product-price="449990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/phone4.webp" 
+                            alt="Nubia Red Magic 11 Pro" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="nubia-red-magic-11-pro"
+                        >
+                        <span class="product-category">Смартфон</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">NUBIA</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Nubia Red Magic 11 Pro
+                        </h3>
+                        <p class="product-description">Игровой смартфон с мощным процессором Snapdragon 8 Elite Gen 5, AMOLED-экраном 144 Гц и системой активного охлаждения. Создан для требовательных мобильных игр и длительных игровых сессий.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>Qualcomm Snapdragon 8 Elite Gen 5</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>12 / 16 / 24 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>256 / 512 ГБ / 1 ТБ</td></tr>
+                                    <tr><th scope="row">Экран</th><td>6,85″ AMOLED</td></tr>
+                                    <tr><th scope="row">Разрешение</th><td>2688 × 1216 пикселей</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">584 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="nubia-red-magic-11-pro" data-product-name="Nubia Red Magic 11 Pro" data-product-price="584990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop.webp" 
+                            alt="MSI VenturePro 17 AI" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="msi-venturepro-17-ai"
+                        >
+                        <span class="product-category">Ноутбук</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">MSI</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            MSI VenturePro 17 AI
+                        </h3>
+                        <p class="product-description">Ноутбук с большим 17,3-дюймовым экраном, предназначенный для работы, многозадачности и создания контента. В зависимости от конфигурации оснащается процессором Intel Core Ultra и дискретной видеокартой NVIDIA.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Экран</th><td>17,3″ IPS-level, Full HD (1920 × 1080)</td></tr>
+                                    <tr><th scope="row">Процессор</th><td>Intel Core Ultra 7 серии 200H</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>SSD NVMe PCIe 4.0</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>DDR5-5600, два слота, поддержка до 96 ГБ</td></tr>
+                                    <tr><th scope="row">Видеокарта</th><td>NVIDIA GeForce RTX 4050 Laptop, 6 ГБ GDDR6</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">1 109 900 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="msi-venturepro-17-ai" data-product-name="MSI VenturePro 17 AI" data-product-price="1109900">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop1.webp" 
+                            alt="Msi Modern 15 F1MG" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="msi-modern-15-f1mg"
+                        >
+                        <span class="product-category">Ноутбук</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">MSI</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Msi Modern 15 F1MG
+                        </h3>
+                        <p class="product-description">Универсальный ноутбук с экраном 15,6 дюйма и встроенной графикой Intel. Подходит для учёбы, программирования, работы с документами и просмотра мультимедиа.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Экран</th><td>15,6″ Full HD (1920 × 1080)</td></tr>
+                                    <tr><th scope="row">Процессор</th><td>Intel Core 7 150U, 10 ядер</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>SSD NVMe</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>до 32 ГБ</td></tr>
+                                    <tr><th scope="row">Видеокарта</th><td>Intel Graphics (встроенная)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">379 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="msi-modern-15-f1mg" data-product-name="Msi Modern 15 F1MG" data-product-price="379990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop2.webp" 
+                            alt="MSI Cyborg 15 C2WF015XRU" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="msi-cyborg-15-c2wf015xru"
+                        >
+                        <span class="product-category">Ноутбук</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">MSI</p>
+                        <h3
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            MSI Cyborg 15 C2WF015XRU
+                        </h3>
+                        <p class="product-description">Игровой ноутбук с процессором Intel Core 5 210H и видеокартой NVIDIA GeForce RTX 5060 Laptop. Высокая частота обновления экрана делает его подходящим для современных игр и ресурсоёмких приложений.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Экран</th><td>15,6″ IPS-level, Full HD (1920 × 1080), 144 Гц</td></tr>
+                                    <tr><th scope="row">Процессор</th><td>Intel Core 5 210H, 8 ядер, 12 потоков, до 4,8 ГГц</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>SSD NVMe PCIe 4.0, 1 ТБ</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>16 ГБ DDR5</td></tr>
+                                    <tr><th scope="row">Видеокарта</th><td>NVIDIA GeForce RTX 5060 Laptop, 8 ГБ GDDR7</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">949 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="msi-cyborg-15-c2wf015xru" data-product-name="MSI Cyborg 15 C2WF015XRU" data-product-price="949990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop3.webp" 
+                            alt="Lenovo IdeaPad Slim 5 14IMH10" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="lenovo-slim-5-14imh10"
+                        >
+                        <span class="product-category">Ноутбук</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">LENOVO</p>
+                        <h3 
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            Lenovo IdeaPad Slim 5 14IMH10
+                        </h3>
+                        <p class="product-description">Универсальный ноутбук для работы, учёбы и повседневных задач. Конфигурации могут отличаться объёмом памяти и характеристиками дисплея.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Процессор</th><td>Intel Core i5</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>16 / 32 ГБ</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>512 / 1024 ГБ SSD</td></tr>
+                                    <tr><th scope="row">Экран</th><td>IPS</td></tr>
+                                    <tr><th scope="row">Камера</th><td>Full HD</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">449 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="lenovo-slim-5-14imh10" data-product-name="Lenovo IdeaPad Slim 5 14IMH10" data-product-price="449990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/laptop4.webp" 
+                            alt="MSI Thin 15 B2RVE3450XRU" 
+                            loading="lazy"
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                        <span class="product-category">Ноутбук</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-brand">MSI</p>
+                        <h3 
+                            class="product-open"
+                            data-product-id="msi-thin-15-b2rve3450xru"
+                        >
+                            MSI Thin 15 B2RVE3450XRU
+                        </h3>
+                        <p class="product-description">Игровой ноутбук с процессором Intel Core 5 210H и видеокартой NVIDIA GeForce RTX 4050 Laptop. Подходит для компьютерных игр, программирования и работы с графическими приложениями.</p>
+                        <div class="specifications">
+                            <h4>Основные характеристики</h4>
+                            <table>
+                                <tbody>
+                                    <tr><th scope="row">Экран</th><td>15,6″ IPS-level, Full HD (1920 × 1080)</td></tr>
+                                    <tr><th scope="row">Процессор</th><td>Intel Core 5 210H</td></tr>
+                                    <tr><th scope="row">Накопитель</th><td>SSD NVMe PCIe 4.0, 512 ГБ</td></tr>
+                                    <tr><th scope="row">ОЗУ</th><td>16 ГБ DDR4-3200</td></tr>
+                                    <tr><th scope="row">Видеокарта</th><td>NVIDIA GeForce RTX 4050 Laptop, 6 ГБ GDDR6</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">749 990 <span>₸</span></p>
+                            <button class="add-to-cart" type="button" data-product-id="msi-thin-15-b2rve3450xru" data-product-name="MSI Thin 15 B2RVE3450XRU" data-product-price="749990">В корзину <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+<!-- Всплывающая карточка товара -->
+<div class="product-modal" id="product-modal">
+
+    <div class="product-modal-overlay"></div>
+
+    <div class="product-modal-content">
+
+        <button class="product-modal-close" type="button">
+            &times;
+        </button>
+
+        <div id="product-modal-body">
+            Загрузка товара...
+        </div>
+
+    </div>
+
+</div>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="index.html">TECH<span>STORE</span></a>
+        <p>Техника для работы, учёбы и развлечений.</p>
+        <a href="index.html">Вернуться на главную →</a>
+        <small>© TECHSTORE</small>
+    </footer>
+
+
+<!-- ========================================
+     TECHSTORE — Панели регистрации и входа
+     ======================================== -->
+
+
+<div class="panel-overlay" id="login-overlay">
+    <section class="login-panel" id="login-panel"
+             role="dialog" aria-modal="true"
+             aria-labelledby="login-title">
+
+        <button class="close-login" id="close-login"
+                type="button" aria-label="Закрыть">
+            ×
+        </button>
+
+        <h2 id="login-title">Вход в аккаунт</h2>
+        <p>Войди, чтобы продолжить покупки.</p>
+
+    <form id="login-form" action="/login" method="post">
+        <label>
+            Email
+            <input type="email" name="email" placeholder="example@mail.com" autocomplete="email" required>
+        </label>
+
+        <label>
+            Пароль
+            <input type="password" name="key" placeholder="Введите Пароль" autocomplete="current-password" required>
+        </label>
+
+        <button type="submit">Войти</button>
+
+        <p id="login-message" role="status"></p>
+    </form>
+
+            <p>
+                Нет аккаунта?
+                <a href="register.html">Регистрация</a>
+            </p>
+
+    </section>
+</div>
+
+
+<div class="panel-overlay" id="register-overlay">
+
+    <section class="register-panel" id="register-panel"
+             role="dialog" aria-modal="true"
+             aria-labelledby="register-title">
+
+        <button class="close-register" id="close-register"
+                type="button" aria-label="Закрыть">
+            ×
+        </button>
+
+        <h2 id="register-title">Регистрация</h2>
+        <p>Создай аккаунт TECHSTORE.</p>
+
+        <form id="register-form">
+
+            <label for="reg-login">Логин:</label>
+            <input type="text" id="reg-login"
+                   name="username" placeholder="Логин" required minlength="5" maxlength="64">
+
+            <label for="reg-email">Почта:</label>
+            <input type="email" id="reg-email"
+                   name="email" placeholder="Ваш email" required>
+
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password"
+                   name="key" placeholder="Введите Пароль" required minlength="8" maxlength="128">
+
+            <label for="reg-password-confirm">Подтвердите пароль:</label>
+            <input type="password" id="reg-password-confirm"
+                   name="key_confirm"
+                   placeholder="Подтвердите пароль" required minlength="8" maxlength="128">
+
+            <div class="register-agreement">
+                <label for="reg-agreement">
+                    Я согласен с <a href="terms.html">условиями пользования</a>
+                </label>
+                <input type="checkbox" id="reg-agreement"
+                       name="agreement" value="yes" required>
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+
+            <p id="register-message" role="status"></p>
+
+        </form>
+
+        <p>
+            Уже есть аккаунт?
+            <a href="login.html" id="open-login-from-register">Войти</a>
+        </p>
+
+    </section>
+
+</div>
+    <div class="cart-toast" id="cart-toast" role="status" aria-live="polite">
+        Товар добавлен в корзину
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* Основная страница товара */
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(0deg, #21154A, #111A30, #080D1B);
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Основной контейнер */
+
+.product-details {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #17152E;
+    border: 1px solid #393057;
+    border-radius: 16px;
+}
+
+/* Верхняя часть: изображение + информация */
+
+.product-main {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Изображение */
+
+.product-image {
+    width: 45%;
+    flex-shrink: 0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Информация справа */
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.product-price {
+    color: #A78BFA;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-short-description {
+    color: #C5C2D8;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+
+/* Нижняя дополнительная информация */
+
+.product-extra {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #393057;
+}
+
+.product-extra h2 {
+    color: #FFFFFF;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+/* Характеристики */
+
+.specifications {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.specification {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    background: #252344;
+    border: 1px solid #393057;
+    border-radius: 10px;
+    color: #C5C2D8;
+}
+
+.specification span:last-child {
+    color: #FFFFFF;
+    text-align: right;
+}
+
+/* Полное описание */
+
+.product-full-description {
+    color: #C5C2D8;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 20px;
+    background: #252344;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .product-details {
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    .product-main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-image img {
+        height: 280px;
+    }
+
+    .product-info h1 {
+        font-size: 24px;
+    }
+
+    .product-price {
+        font-size: 24px;
+    }
+
+    .specifications {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.product-content h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-content h3 a:hover {
+    color: #A78BFA;
+}
+
+
+
+.product-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

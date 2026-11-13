@@ -1,0 +1,227 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position:relative;
+    bottom:40px;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color:#F1F5FF;
+}
+
+.register-input {
+    background-color:#17152B;
+}
+
+.register-input:focus {
+    background-color:29235F;
+    color:#F1F5FF;
+    border:2px solid 00D5E8;
+    outline:none;
+    
+}
+
+.button {
+    background:-webkit-linear-gradient(100deg,#5540F5,#923FFF,#356BFF);
+    background:linear-gradient(100deg,#5540F5,#923FFF,#356BFF)
+    color: white;
+    border: 2px solid #487b2f;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition:transform 0.1s;
+}
+
+.button:active {
+    transform: scale(0.85);
+    filter: brightness(0.8);
+}
+
+body {
+    background: -webkit-linear-gradient(0deg, #21154A,#111A30,#080D1B);
+    background: linear-gradient(0deg,#21154A,#111A30,#080D1B);
+}
+
+header {
+    margin-top:20px;
+    justify-content:center;
+    font-size: 22px;
+    display:flex;
+    gap:20px;
+}
+
+.main-info {
+    color:#F1F5FF;
+    text-shadow:
+        -1px -1px 0 #808080,
+         1px -1px 0 #808080,
+        -1px  1px 0 #808080,
+         1px  1px 0 #808080;
+    font-family:Trebuchet MS,sans-serif;
+}
+
+#products {
+    background-color:#4944b8;
+    color:#292528;
+    border:3px solid #2a60c9;
+    border-radius:6px;
+    width:fit-content;
+}
+
+ h1 { 
+    background:-webkit-linear-gradient(100deg,#5540F5,#923FFF,#356BFF);
+    background:linear-gradient(100deg,#5540F5,#923FFF,#356BFF);
+    text-shadow:
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+    border: 3px solid none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.register-heading {
+    background:none;
+    border: none;
+    margin: 0 0 15px;
+    text-align: center;
+    position:relative;
+    top:180px;
+    font-size:32px;
+    color:white;
+}
+
+.product {
+    background-color:#111A30;
+    width: 900px;
+    margin: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family:Times New Roman, sans serif;
+}
+
+.product-left {
+    vertical align:top;
+    flex-direction: column;
+}
+
+.image-container {
+    background: -webkit-linear-gradient(180deg, #21154A,#111A30,#7857FF);
+    background: linear-gradient(180deg,#21154A,#111A30,#7857FF);
+    width:fit-content;
+    width:360px;
+    height:290px;
+    margin:0;
+    padding:0;
+    border:6px solid none;
+    border-radius:12px;
+    margin-left:20px;
+}
+
+.image-container .img {
+    width:85%;
+    height:100%;
+    object-fit:contain;
+    margin:0;
+}
+
+    
+
+.product table {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color:#21154A;
+    border:5px solid none;
+    color:#AAB7D3;
+    border-radius:8px;
+    margin-left:50px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.product p {
+    color:#F1F5FF;
+    font-size: 18px;
+    font-weight: normal;
+    font-family:Aerial,sans-serif;
+}
+
+.product .price {
+    background-color:#69df89;
+    border:2px solid ;
+    border-radius: 6px;
+    width: fit-content;
+    color:#0f8b61;
+    font-size: 24px;
+    position:relative;
+    left:100px;
+    font-family:Trebuchet MS,sans-serif;
+}
+
+.product .product-name {
+    font-size:30px;
+    color:black;
+    text-shadow:
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+    display:block;
+    font-family:Trebuchet MS,sans-serif;
+}
+
+.product-description {
+    margin-left: 100px;
+    display: inline-block;
+    position:absolute;
+    left:550px;
+    width:380px;
+    margin-bottom:19px;
+    font-size: 18px;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.form .order {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position:relative;
+}
+
+.product button {
+    margin-bottom:30px;
+    margin-left:150px;
+    background:-webkit-linear-gradient(100deg,#5540F5,#923FFF,#356BFF);
+    background:linear-gradient(100deg,#5540F5,#923FFF,#356BFF);
+    color: white;
+    border-radius: 1px;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition:transform 0.1s;
+}
+
+.product button:active {
+    transform: scale(0.85);
+    filter: brightness(0.8);
+}
